@@ -1,7 +1,37 @@
-# Vue 3 + Vite
+# КВИК ДИЛ тестовое отборочное задание
+[КВИК ДИЛ] => тестовое задание на позицию Middle / Junior+ + frontend developer [JavaScript - Vue.js] 
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Introduction  
+### Условия задачи
+---
+Разработать простое приложение таск-менеджера с использованием Vue 3, включая работу с vuex или pinia и vue-router.
+1. Приложение должно иметь главную страницу (на главной странице переход на страницу со списком задач, по желанию можете дать волю своей фантазии).
+2. На странице со списком задач должна быть форма создания задачи.
+3. Задачи можно удалить и отредактировать. При обновлении страницы должны отображаться сохранённые задачи.
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+#### Требования: 
+
+
+## Summary
+### Что сделано по задаче
+- Написал README.md
+
+### Что не сделано по задаче
+
+## Requirements
+### Для работы проекта необходимо следущее программное обеспечение или библиотеки:
+
+## Installation and Usage
+### Инструкции по установке и использованию 
+
+### Использование проекта  
+
+## License
+- тип лицензии, под которой распространяется проект Apache License 2.0
+
+## Authors and Contacts
+Автор: Евгений Седов
+
+Телеграм для связи: @evsedov 
