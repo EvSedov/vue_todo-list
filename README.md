@@ -27,7 +27,7 @@
 
 ## Installation and Usage
 ### Инструкции по установке и использованию 
-1. Клонировать репозиторий `git clonr https://github.com/EvSedov/vue_todo-list.git`
+1. Клонировать репозиторий `git clone https://github.com/EvSedov/vue_todo-list.git`
 2. Перейти в папку проекта `cd vue_todo-list`
 3. Установить зависимости `npm ci`
 4. Запустить приложение `npm run dev`
