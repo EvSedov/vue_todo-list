@@ -1,7 +1,7 @@
 <template>
   <div class="header">
       <div class="container">
-        <div class="logo">Список дел</div>
+        <router-link to="/" class="logo">Список дел</router-link>
         <todo-form></todo-form>
       </div>
     </div>
@@ -38,5 +38,6 @@
     color: #ddd;
     font-size: 24px;
     cursor: pointer;
+    text-decoration: none;
   }
 </style>
