@@ -1,46 +1,10 @@
-import { createApp } from 'vue'
+import { createApp } from 'vue';
+// import { router } from './router';
+import { createPinia } from 'pinia'
+import App from './App.vue';
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
-createApp({
-  data() {
-    return {
-      valueInput: '',
-      needDoList: [],
-      completeList: []
-    };
-  },
-  methods: {
-    handleInput (event) {
-      this.valueInput = event.target.value;
-    },
+const pinia = createPinia();
+pinia.use(piniaPluginPersistedstate);
 
-    addTask() {
-      if (this.valueInput === '') { return }
-      this.needDoList.push({
-        title: this.valueInput,
-        id: Math.random(),
-        onEditing: false,
-      });
-      this.valueInput = ''
-    },
-
-    doCheck(index, type) {
-      if(type === 'need') {
-        const completeTask = this.needDoList.splice(index, 1);
-        this.completeList.push(...completeTask);
-      } else {
-        const noCompleteTask = this.completeList.splice(index, 1);
-        this.needDoList.push(...noCompleteTask);
-      }
-    },
-
-    toggleEditing(task){
-      task.onEditing =!task.onEditing;
-    },
-
-    delTask(index, type) {
-      const toDoList = (type === 'need') ? this.needDoList : this.completeList;
-      toDoList.splice(index, 1);
-    }
-  }
-}).mount('#app');
-
+createApp(App).use(pinia).mount('#app');
